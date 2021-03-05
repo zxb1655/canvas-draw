@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>canvas画板</title>
+</head>
+
+<body>
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div id="actions" class="actions">
+        <svg id="brush" class="icon active" aria-hidden="true">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+
+        <svg id="eraser"class="icon" aria-hidden="true">
+            <use xlink:href="#icon-xiangpica"></use>
+        </svg>
+        <svg id="clear"class="icon" aria-hidden="true">
+                <use xlink:href="#icon-qingchu"></use>
+        </svg>  
+    </div>
+    <div class="download">
+            <svg id="download"class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-baocun"></use>
+            </svg>   
+    </div>
+    <ol id="colors">
+        <li id="black" class="active"></li>      
+        <li id="red"></li>
+        <li id="yellow"></li>
+        <li id="green"></li>
+        <li id="blue"></li>
+    </ol>
+    <ol id="line">
+				<li id="big" data-index="8" class="active"><span></span></li>      
+				<li id="middle" data-index="5"><span></span></li>
+				<li id="small" data-index="3"><span></span></li>
+		</ol>
+  
+<script src="./font/iconfont.js"></script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>
